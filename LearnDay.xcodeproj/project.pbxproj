@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		973387D71F9ECA940043A6D3 /* LDCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973387D61F9ECA940043A6D3 /* LDCustomController.m */; };
+		973387DA1F9F52A30043A6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973387D91F9F52A30043A6D3 /* Assets.xcassets */; };
+		973387DB1F9FDABE0043A6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E6161F8DBA2B001ACE27 /* AppDelegate.m */; };
+		973387DE1F9FE3E70043A6D3 /* LDCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973387DD1F9FE3E70043A6D3 /* LDCustomCell.m */; };
+		974902191FAD1DE3006EF42F /* LDSharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE76A61F904B4F00FAEB59 /* LDSharedManager.m */; };
+		977D370D1FA6111F0030531F /* LDTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977D370C1FA6111F0030531F /* LDTodayViewController.m */; };
+		977D37141FA6111F0030531F /* todayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 977D37061FA6111F0030531F /* todayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		977D371E1FA61AF10030531F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977D371D1FA61AEC0030531F /* NotificationCenter.framework */; };
+		977D37251FA64E8E0030531F /* darkmodeToggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 977D37241FA64E8E0030531F /* darkmodeToggle.png */; };
+		978F4D901F9FF89900242DC2 /* LDCustomDays.m in Sources */ = {isa = PBXBuildFile; fileRef = 978F4D8F1F9FF89900242DC2 /* LDCustomDays.m */; };
+		979689B71FAAB34C0077D51B /* LDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979689B61FAAB34C0077D51B /* LDNavigationController.m */; };
+		97BE76A71F904B4F00FAEB59 /* LDSharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE76A61F904B4F00FAEB59 /* LDSharedManager.m */; };
+		97C22BAB1F8EC3F9005AB70D /* LDSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C22BAA1F8EC3F9005AB70D /* LDSettingsController.m */; };
+		97C7ECD91F915D2E00258A13 /* LDSchoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7ECD71F915D2D00258A13 /* LDSchoolController.m */; };
+		97F6E61A1F8DBA2B001ACE27 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E6191F8DBA2B001ACE27 /* LDViewController.m */; };
+		97F6E61D1F8DBA2B001ACE27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E61B1F8DBA2B001ACE27 /* Main.storyboard */; };
+		97F6E6221F8DBA2B001ACE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E6201F8DBA2B001ACE27 /* LaunchScreen.storyboard */; };
+		97F6E6251F8DBA2B001ACE27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E6241F8DBA2B001ACE27 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		977D37121FA6111F0030531F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97F6E60A1F8DBA2B001ACE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 977D37051FA6111F0030531F;
+			remoteInfo = todayWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		977D37181FA6111F0030531F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				977D37141FA6111F0030531F /* todayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		973387D61F9ECA940043A6D3 /* LDCustomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCustomController.m; sourceTree = "<group>"; };
+		973387D81F9ECA9E0043A6D3 /* LDCustomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCustomController.h; sourceTree = "<group>"; };
+		973387D91F9F52A30043A6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		973387DC1F9FE3E00043A6D3 /* LDCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCustomCell.h; sourceTree = "<group>"; };
+		973387DD1F9FE3E70043A6D3 /* LDCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCustomCell.m; sourceTree = "<group>"; };
+		977D37061FA6111F0030531F /* todayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		977D370B1FA6111F0030531F /* LDTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTodayViewController.h; sourceTree = "<group>"; };
+		977D370C1FA6111F0030531F /* LDTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTodayViewController.m; sourceTree = "<group>"; };
+		977D37111FA6111F0030531F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977D371D1FA61AEC0030531F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		977D371F1FA623830030531F /* todayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todayWidget.entitlements; sourceTree = "<group>"; };
+		977D37241FA64E8E0030531F /* darkmodeToggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkmodeToggle.png; sourceTree = "<group>"; };
+		978F4D8F1F9FF89900242DC2 /* LDCustomDays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCustomDays.m; sourceTree = "<group>"; };
+		978F4D921F9FF8C400242DC2 /* LDCustomDays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCustomDays.h; sourceTree = "<group>"; };
+		979689B51FAAB3270077D51B /* LDNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDNavigationController.h; sourceTree = "<group>"; };
+		979689B61FAAB34C0077D51B /* LDNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDNavigationController.m; sourceTree = "<group>"; };
+		97BE76A51F904B2900FAEB59 /* LDSharedManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSharedManager.h; sourceTree = "<group>"; };
+		97BE76A61F904B4F00FAEB59 /* LDSharedManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSharedManager.m; sourceTree = "<group>"; };
+		97C22BA81F8EB125005AB70D /* LearnDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnDay.entitlements; sourceTree = "<group>"; };
+		97C22BA91F8EC3EC005AB70D /* LDSettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSettingsController.h; sourceTree = "<group>"; };
+		97C22BAA1F8EC3F9005AB70D /* LDSettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSettingsController.m; sourceTree = "<group>"; };
+		97C7ECD71F915D2D00258A13 /* LDSchoolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSchoolController.m; sourceTree = "<group>"; };
+		97C7ECD81F915D2D00258A13 /* LDSchoolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSchoolController.h; sourceTree = "<group>"; };
+		97F6E6121F8DBA2B001ACE27 /* LearnDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F6E6151F8DBA2B001ACE27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97F6E6161F8DBA2B001ACE27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97F6E6181F8DBA2B001ACE27 /* LDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
+		97F6E6191F8DBA2B001ACE27 /* LDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
+		97F6E61C1F8DBA2B001ACE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97F6E6211F8DBA2B001ACE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97F6E6231F8DBA2B001ACE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F6E6241F8DBA2B001ACE27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		977D37031FA6111F0030531F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977D371E1FA61AF10030531F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E60F1F8DBA2B001ACE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		977D370A1FA6111F0030531F /* todayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				977D371F1FA623830030531F /* todayWidget.entitlements */,
+				977D370B1FA6111F0030531F /* LDTodayViewController.h */,
+				977D370C1FA6111F0030531F /* LDTodayViewController.m */,
+				977D37111FA6111F0030531F /* Info.plist */,
+				977D371C1FA61AEC0030531F /* Frameworks */,
+			);
+			path = todayWidget;
+			sourceTree = "<group>";
+		};
+		977D371C1FA61AEC0030531F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				977D371D1FA61AEC0030531F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		978F4D931F9FF8D100242DC2 /* CustomSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				973387DC1F9FE3E00043A6D3 /* LDCustomCell.h */,
+				973387DD1F9FE3E70043A6D3 /* LDCustomCell.m */,
+				973387D81F9ECA9E0043A6D3 /* LDCustomController.h */,
+				973387D61F9ECA940043A6D3 /* LDCustomController.m */,
+				978F4D921F9FF8C400242DC2 /* LDCustomDays.h */,
+				978F4D8F1F9FF89900242DC2 /* LDCustomDays.m */,
+			);
+			path = CustomSchedule;
+			sourceTree = "<group>";
+		};
+		97F6E6091F8DBA2B001ACE27 = {
+			isa = PBXGroup;
+			children = (
+				97F6E6141F8DBA2B001ACE27 /* LearnDay */,
+				977D370A1FA6111F0030531F /* todayWidget */,
+				97F6E6131F8DBA2B001ACE27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97F6E6131F8DBA2B001ACE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E6121F8DBA2B001ACE27 /* LearnDay.app */,
+				977D37061FA6111F0030531F /* todayWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97F6E6141F8DBA2B001ACE27 /* LearnDay */ = {
+			isa = PBXGroup;
+			children = (
+				97C22BA81F8EB125005AB70D /* LearnDay.entitlements */,
+				97F6E6151F8DBA2B001ACE27 /* AppDelegate.h */,
+				97F6E6161F8DBA2B001ACE27 /* AppDelegate.m */,
+				979689B51FAAB3270077D51B /* LDNavigationController.h */,
+				979689B61FAAB34C0077D51B /* LDNavigationController.m */,
+				97BE76A51F904B2900FAEB59 /* LDSharedManager.h */,
+				97BE76A61F904B4F00FAEB59 /* LDSharedManager.m */,
+				97C7ECD81F915D2D00258A13 /* LDSchoolController.h */,
+				97C7ECD71F915D2D00258A13 /* LDSchoolController.m */,
+				978F4D931F9FF8D100242DC2 /* CustomSchedule */,
+				97F6E6181F8DBA2B001ACE27 /* LDViewController.h */,
+				97F6E6191F8DBA2B001ACE27 /* LDViewController.m */,
+				97C22BA91F8EC3EC005AB70D /* LDSettingsController.h */,
+				97C22BAA1F8EC3F9005AB70D /* LDSettingsController.m */,
+				97F6E61B1F8DBA2B001ACE27 /* Main.storyboard */,
+				973387D91F9F52A30043A6D3 /* Assets.xcassets */,
+				977D37241FA64E8E0030531F /* darkmodeToggle.png */,
+				97F6E6201F8DBA2B001ACE27 /* LaunchScreen.storyboard */,
+				97F6E6231F8DBA2B001ACE27 /* Info.plist */,
+				97F6E6241F8DBA2B001ACE27 /* main.m */,
+			);
+			path = LearnDay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		977D37051FA6111F0030531F /* todayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 977D37171FA6111F0030531F /* Build configuration list for PBXNativeTarget "todayWidget" */;
+			buildPhases = (
+				977D37021FA6111F0030531F /* Sources */,
+				977D37031FA6111F0030531F /* Frameworks */,
+				977D37041FA6111F0030531F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todayWidget;
+			productName = todayWidget;
+			productReference = 977D37061FA6111F0030531F /* todayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		97F6E6111F8DBA2B001ACE27 /* LearnDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F6E6281F8DBA2B001ACE27 /* Build configuration list for PBXNativeTarget "LearnDay" */;
+			buildPhases = (
+				97F6E60E1F8DBA2B001ACE27 /* Sources */,
+				97F6E60F1F8DBA2B001ACE27 /* Frameworks */,
+				97F6E6101F8DBA2B001ACE27 /* Resources */,
+				977D37181FA6111F0030531F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				977D37131FA6111F0030531F /* PBXTargetDependency */,
+			);
+			name = LearnDay;
+			productName = LearnDay;
+			productReference = 97F6E6121F8DBA2B001ACE27 /* LearnDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97F6E60A1F8DBA2B001ACE27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = BlackJacket;
+				TargetAttributes = {
+					977D37051FA6111F0030531F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					97F6E6111F8DBA2B001ACE27 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 97F6E60D1F8DBA2B001ACE27 /* Build configuration list for PBXProject "LearnDay" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97F6E6091F8DBA2B001ACE27;
+			productRefGroup = 97F6E6131F8DBA2B001ACE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97F6E6111F8DBA2B001ACE27 /* LearnDay */,
+				977D37051FA6111F0030531F /* todayWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		977D37041FA6111F0030531F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E6101F8DBA2B001ACE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F6E6221F8DBA2B001ACE27 /* LaunchScreen.storyboard in Resources */,
+				973387DA1F9F52A30043A6D3 /* Assets.xcassets in Resources */,
+				977D37251FA64E8E0030531F /* darkmodeToggle.png in Resources */,
+				97F6E61D1F8DBA2B001ACE27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		977D37021FA6111F0030531F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974902191FAD1DE3006EF42F /* LDSharedManager.m in Sources */,
+				977D370D1FA6111F0030531F /* LDTodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E60E1F8DBA2B001ACE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C22BAB1F8EC3F9005AB70D /* LDSettingsController.m in Sources */,
+				97F6E61A1F8DBA2B001ACE27 /* LDViewController.m in Sources */,
+				97F6E6251F8DBA2B001ACE27 /* main.m in Sources */,
+				97C7ECD91F915D2E00258A13 /* LDSchoolController.m in Sources */,
+				973387DE1F9FE3E70043A6D3 /* LDCustomCell.m in Sources */,
+				979689B71FAAB34C0077D51B /* LDNavigationController.m in Sources */,
+				978F4D901F9FF89900242DC2 /* LDCustomDays.m in Sources */,
+				973387D71F9ECA940043A6D3 /* LDCustomController.m in Sources */,
+				97BE76A71F904B4F00FAEB59 /* LDSharedManager.m in Sources */,
+				973387DB1F9FDABE0043A6D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		977D37131FA6111F0030531F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 977D37051FA6111F0030531F /* todayWidget */;
+			targetProxy = 977D37121FA6111F0030531F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97F6E61B1F8DBA2B001ACE27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F6E61C1F8DBA2B001ACE27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97F6E6201F8DBA2B001ACE27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F6E6211F8DBA2B001ACE27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		977D37151FA6111F0030531F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todayWidget/todayWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5WR8XN66J;
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_CFLAGS = "-DTODAY_EXTENSION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadkid.LearnDay.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		977D37161FA6111F0030531F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todayWidget/todayWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5WR8XN66J;
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_CFLAGS = "-DTODAY_EXTENSION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadkid.LearnDay.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97F6E6261F8DBA2B001ACE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		97F6E6271F8DBA2B001ACE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97F6E6291F8DBA2B001ACE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearnDay/LearnDay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5WR8XN66J;
+				INFOPLIST_FILE = LearnDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadkid.LearnDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97F6E62A1F8DBA2B001ACE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearnDay/LearnDay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5WR8XN66J;
+				INFOPLIST_FILE = LearnDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadkid.LearnDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		977D37171FA6111F0030531F /* Build configuration list for PBXNativeTarget "todayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				977D37151FA6111F0030531F /* Debug */,
+				977D37161FA6111F0030531F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F6E60D1F8DBA2B001ACE27 /* Build configuration list for PBXProject "LearnDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E6261F8DBA2B001ACE27 /* Debug */,
+				97F6E6271F8DBA2B001ACE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F6E6281F8DBA2B001ACE27 /* Build configuration list for PBXNativeTarget "LearnDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E6291F8DBA2B001ACE27 /* Debug */,
+				97F6E62A1F8DBA2B001ACE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97F6E60A1F8DBA2B001ACE27 /* Project object */;
+}
